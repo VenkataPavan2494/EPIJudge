@@ -5,7 +5,7 @@ long long SwapBits(long long x, int i, int j) {
   long long ret_num = x;
 
   // We have to swap only:
-  // 1. when the positions passed are diffenret.
+  // 1. when the positions passed are diffenret and
   // 2. when the values at the positions are different.
   if ((i != j) && (((x >> i) & 0x1) != ((x >> j) & 0x1))) {
     // Prepare a mask containing 1's at the postions mentioned.
