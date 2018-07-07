@@ -6,7 +6,7 @@ long long SwapBits(long long x, int i, int j) {
 
   // We have to swap only:
   // 1. when the positions passed are diffenret.
-  // 2. The values at the positions are different.
+  // 2. when the values at the positions are different.
   if ((i != j) && (((x >> i) & 0x1) != ((x >> j) & 0x1))) {
     // Prepare a mask containing 1's at the postions mentioned.
     long long bit_mask = (((static_cast<long long>(0x1)) << i) |
